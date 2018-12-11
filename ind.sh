@@ -60,7 +60,6 @@ echo "     INSTALL CURL     "
 echo "=============================="
 # install wget and curl
 apt-get update;apt-get -y install wget curl;
-apt-get install gem
 # set time GMT +7
 ln -fs /usr/share/zoneinfo/Asia/Jakarta /etc/localtime
 # set locale
@@ -163,10 +162,10 @@ service vnstat restart
 cd
 
 # install gambar boxes
-apt-get install boxes
+apt-get -y install boxes
 
 # text warna pelangi
-sudo apt-get install ruby
+sudo apt-get -y install ruby
 sudo gem install lolcat 
 
 # tampilan unik awal login
