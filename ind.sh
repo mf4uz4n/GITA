@@ -19,12 +19,12 @@ if [ $USER != 'root' ]; then
 	echo "Sorry, for run the script please using root user"
 	exit
 fi
-wget -q -O IP http://ipublic.me/ipku.txt
+wget -q -O IP https://ipublic.me/ipku.txt
 if ! grep -w -q $myip IP; then
 	echo "Maaf, hanya IP yang terdaftar yang bisa menggunakan script ini!"
 	echo "Jika Berminat menggunakan Auto Script Premium ini silahkan hubungi admin :)"
 	rm /root/IP
-	rm instalasi.sh
+	rm ind.sh
 	rm -f /root/IP
 	exit
 fi
@@ -500,7 +500,7 @@ echo "Log Installasi --> /root/log-install.txt"  | tee -a log-install.txt
 echo "SILAHKAN REBOOT VPS ANDA !"  | tee -a log-install.txt
 
 cd
-rm -f /root/instalasi.sh
+rm -f /root/ind.sh
 rm -f /root/addpptp.sh
 rm -f /root/menu.sh
 rm -r /root/fornesia87
